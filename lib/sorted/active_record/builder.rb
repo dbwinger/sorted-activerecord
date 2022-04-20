@@ -72,7 +72,7 @@ module Sorted
       end
 
       def to_sql
-        @return_hash ? to_hash : ::Sorted::SQLQuery.encode(@set)
+        ::Sorted::SQLQuery.encode(@set)
       end
     end
   end
